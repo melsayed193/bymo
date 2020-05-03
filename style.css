@@ -1,0 +1,300 @@
+/*By Mo*/
+
+*{
+  box-sizing: border-box;
+}
+
+
+body {
+  color: #ED5338;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 40px;
+  margin-bottom: 0px;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
+.mainlogo{
+  padding: 0px;
+
+}
+.mainlogo img{
+  height: 2em;
+}
+.divre{
+  width: 200px;
+  height: 100px;
+  background: red;
+  text-align: right;
+}
+.topbox{
+  height: .25em;
+  margin-bottom: 3em;
+  width: 110%;
+  background-color: #ed5238;
+}
+.menu{
+  text-align: left;
+    font-size: 24px;
+    padding: 20px;
+    padding-left: 0px;
+    width: 120px;
+    transition: all 0.3s;
+    cursor: pointer;
+    height: fit-content;
+    margin: 5px;
+    margin-left: -30px;
+    grid-area: menu;
+}
+
+.work{
+  height: 100%;
+  width: 30px;
+  background-color: #ed5238;
+  position: absolute;
+  display: -webkit-box;
+  right: 0;
+  transition: width 0.3s ease;
+}
+
+
+
+
+
+
+ul{
+  list-style-type: none;
+  color: white;
+  margin: 0;
+  margin-top: -11px;
+  padding: 0;
+}
+li{
+  margin-top: 10px;
+    margin-left: 13px;
+    background-color: white;
+    margin-right: -21px;
+}
+a{
+  text-decoration: none;
+  color: #ed5238;
+}
+a:hover{
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.grid-container {
+  font-family: 'Roboto Condensed', sans-serif;
+
+  position: relative;
+  display: -webkit-box;
+  gap: 1px 1px;
+  grid-template-areas: "menu . . ." "menu . . .";
+  height: 400px;
+  right: -40px;
+
+}
+
+h1{
+  font-size: 4em;
+  font-weight: 100;
+  text-align: left;
+  margin-top: 10px;
+  line-height: 1;
+}
+h2{
+  font-size: 4em;
+  text-align: right;
+  text-transform: uppercase;
+  position: absolute;
+  top: 164px;
+  right: .6em;
+  width: 420px;
+  height: 220px;
+  line-height: 1;
+}
+
+
+
+
+
+
+
+
+/* New stuff */
+
+.work {
+  padding: 1em;
+  overflow-x: auto;
+}
+
+.projects {
+  position: absolute;
+  display: flex;
+  height: calc(100% - 2em);
+  width: auto;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  transition: all 0.3s ease;
+}
+
+#detail-active .projects {
+  flex-wrap: wrap;
+  width: 25%;
+  height: 5em;
+}
+
+.project {
+  opacity: 0;
+  transition: all 0.3s ease;
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+  width: 15em;
+  margin-right: 1em;
+  z-index: 1;
+}
+
+#detail-active .project {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.project-image {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  border-radius: 1em;
+  overflow: hidden;
+  transition:  0.3s ease;
+}
+.project:hover .project-image {
+  height: 50%;
+  opacity: .9;
+
+}
+#detail-active .project:hover .project-image {
+  height: 100%;
+}
+
+.project-image img {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.project-name, .project-text {
+  position: relative;
+  top: 50%;
+  color: white;
+  font-size: 0.75em;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.project-name{
+  font-size: 20px;
+  font-weight: bold;
+}
+.project:hover .project-name,
+.project:hover .project-text {
+  opacity: 1;
+}
+
+#detail-active .project:hover .project-name,
+#detail-active .project:hover .project-text {
+  opacity: 0;
+}
+
+.work-detail {
+  width: 0;
+  transition: all 0.3s ease;
+}
+
+#detail-active .work-detail {
+  margin-top: 1em;
+  background: white;
+  width: 75%;
+  margin-left: calc(25% + 1em);
+  padding: 1em;
+  padding-right: 0;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#detail-active .detail-name {
+  width: 100%;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1em;
+
+
+}
+
+#detail-active .detail-text {
+  width: 50%;
+  font-size: .9em;
+}
+
+#detail-active .detail-image {
+  width: 50%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#work-active .project {
+  opacity: 1;
+}
+
+#work-active .work {
+  width: 85%;
+}
+
+
+.welcome {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+#work-active .welcome,
+#contact-active .welcome {
+  opacity: 0
+}
+
+.contact {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#contact-active .contact {
+  opacity: 1;
+}
+
+
+@media screen and (max-width: 520px) {
+
+  .menu{
+      display: flex;
+
+  }
+ }
+
+
+
+}
+h3{
+
+}
+
+/* End of new stuff */
+
+
+
+
