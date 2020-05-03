@@ -74,7 +74,7 @@ ul{
 li{
   margin-top: 10px;
     margin-left: 13px;
-    background-color: white;
+    background-color: #ffffff00;
     margin-right: -21px;
 }
 a{
@@ -129,6 +129,7 @@ h2{
 .work {
   padding: 1em;
   overflow-x: auto;
+  top: 0;
 }
 
 .projects {
@@ -292,6 +293,101 @@ img {
 h3{
 
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#work-active .project {
+  opacity: 1;
+}
+
+#work-active .work {
+  width: 85%;
+}
+
+
+.welcome {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+#work-active .welcome,
+#contact-active .welcome {
+  opacity: 0
+}
+
+.contact {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#contact-active .contact {
+  opacity: 1;
+}
+
+
+.menu-toggle {
+  display: none;
+}
+@media (max-width: 700px) {
+  .grid-container {
+    display: block;
+  }
+  .menu {
+      position: fixed;
+      top: 5em;
+      background: #ea5137;
+      padding: 5em;
+      border-radius: 5em;
+      display: block;
+      right: 0;
+      left: 0;
+      width: 100vw;
+      height: 60vh;
+      text-align: center;
+      z-index: 10;
+      transition: transform 0.3s ease;
+      transform: translateX(200vw);
+  }
+  .menu-active .menu {
+    transform: translateX(0);
+  }
+  .menu a {
+      color: white;
+      text-align: center;
+  }
+  .menu-toggle {
+    display: block;
+      position: absolute;
+      top: 1em;
+      right: 1em;
+      width: 2.5em;
+      height: 2.5em;
+      background-color: #ea5137;
+      border-radius: 50%;
+      cursor: pointer;
+  }
+  .menu-toggle span {
+    background-color: white;
+    height: 0.25em;
+    width: 2em;
+    margin: 0 auto;
+    display: block;
+    border-radius: 3px;
+    position: absolute;
+    left: 0.25em;
+  }
+  .menu-toggle span:nth-child(1) {
+    top: 1.125em;
+  }
+  .menu-toggle span:nth-child(2) {
+      top: 0.75em;
+  }
+  .menu-toggle span:nth-child(3) {
+      top: 1.5em;
+  }}
 
 /* End of new stuff */
 
