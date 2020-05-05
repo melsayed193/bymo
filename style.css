@@ -335,6 +335,26 @@ img {
   .grid-container {
     display: block;
   }
+  .work{
+    height: 170vw;
+  }
+
+  h1{
+    font-size: 14vw;
+    margin-bottom: 56vw;
+
+  }
+
+  h2{
+      position: absolute;
+    bottom: 10px;
+    width: 7em;
+    font-size: 14vw;
+    top: 119vw;
+    margin-right: 0.1em;
+
+  }
+
   .menu {
       position: fixed;
       top: 5em;
@@ -387,7 +407,26 @@ img {
   }
   .menu-toggle span:nth-child(3) {
       top: 1.5em;
-  }}
+  }
+#work-active .work {
+  width: 127%;
+}
+#detail-active .work-detail{
+  margin-top: 0;
+
+}
+#detail-active .detail-image {
+
+  position: absolute;
+    width: 55%;
+    top: 6.5em;
+}
+#detail-active .detail-text{
+  width: 90%;
+    margin-top: 4em;
+}
+
+}
 
 /* End of new stuff */
 
